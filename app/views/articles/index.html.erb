@@ -1,0 +1,29 @@
+<% content_for :body_class, "articles-home" %>
+
+<h1>Suitless Articles</h1>
+ 
+ 
+<%= link_to 'New article', new_article_path %> 
+ 
+
+<section role="articles-list">
+  <ul class="column-labels">
+    <li>title</li>
+    <li>body text</li>
+    <li>actions</li>
+  </ul>
+  <% @articles.each do |article| %>
+    <article>
+      <span><%= article.title %></span>
+      <span><%= raw HTML_Truncator.truncate(article.text, 20) %></span>       
+      <span>
+        <%= link_to 'Show', article_path(article) %>
+        <%= link_to 'Edit', edit_article_path(article) %>
+        <%= link_to 'Destroy', article_path(article),
+                              method: :delete,
+                              data: { confirm: 'Are you sure?' } %>
+      </span>
+    </article>
+  <% end %>
+</section>
+ 

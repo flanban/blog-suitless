@@ -1,0 +1,47 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body.articles-home {
+  width: 100%;
+  text-align:center;
+
+}
+
+section[role="articles-list"] {
+  > ul {
+    li {
+      padding:10px;
+      display:inline-block;
+      margin-left:-5px;
+      &:first-child {
+        width: 20%;
+      }
+      &:nth-child(2) {
+        width:60%;
+      }
+      &:nth-child(3) {
+        width:20%;
+      }
+    }
+  }
+  text-align:left;
+  width:70%;
+  margin:auto;
+  article > span {
+    padding:10px;
+    display:inline-block;
+    vertical-align:top;
+    border:1px solid pink;
+    margin-left:-5px;
+    &:first-child {
+      width: 20%;
+    }
+    &:nth-child(2) {
+      width:60%;
+    }
+    &:nth-child(3) {
+      width:20%;
+    }
+  }
+}
