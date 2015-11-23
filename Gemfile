@@ -56,3 +56,5 @@ group :production do
 end
 
 gem "html_truncator", "~>0.2"
+
+gem "paperclip", "~> 4.3"

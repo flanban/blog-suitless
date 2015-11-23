@@ -15,6 +15,12 @@
   <% end %>
  
   <p>
+    <%= f.file_field :main_blog_img %><br>
+    <%= image_tag @article.main_blog_img.url(:medium) %>
+    
+  </p>
+ 
+  <p>
     <%= f.label :title %><br>
     <%= f.text_field :title %>
   </p>

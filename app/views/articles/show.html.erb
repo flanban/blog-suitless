@@ -1,6 +1,7 @@
 <% content_for :body_class, "article-show" %>
 <div class="article-wrapper">
-  <%= image_tag 'peach.jpg' %>
+  <%= image_tag @article.main_blog_img.url(:big) %>
+  
   <h1>
     <%= @article.title %>
   </h1>

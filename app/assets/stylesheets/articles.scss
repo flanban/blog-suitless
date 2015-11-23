@@ -10,6 +10,8 @@ body.article-show {
     border-bottom:1px solid #ddd;
     img {
       margin-bottom:24px;
+      width:100%;
+      height:auto;
     }
     h1 {
       font-size:40px;
@@ -24,7 +26,7 @@ body.admin {
   margin-top:100px;
   background-color:#113751;
   color:white;
-  img {
+  img.logo {
     position: absolute;
     top: 33px;
     left: 30px;
@@ -91,6 +93,11 @@ section[role="admin-box"] {
   form {
     > p {
       margin-bottom: 2em;
+
+      #article_main_blog_img {
+        margin-bottom:16px;
+      }
+
       &#form-submit {
         position:absolute;
         top: 46px;
