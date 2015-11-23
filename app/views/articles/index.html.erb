@@ -7,12 +7,18 @@
 
 <section role="admin-box">
   <ul class="column-labels">
+    <li>Main Image</li>
     <li>title</li>
     <li>body text</li>
     <li>actions</li>
   </ul>
   <% @articles.each do |article| %>
     <article>
+      <span>
+        <% if article.main_blog_img.exists? %>
+          <%= image_tag article.main_blog_img.url(:thumb) %>
+        <% end %>
+      </span>
       <span><%= article.title %></span>
       <span><%= raw HTML_Truncator.truncate(article.text, 20) %></span>       
       <span>

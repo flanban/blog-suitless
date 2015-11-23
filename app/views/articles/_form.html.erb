@@ -15,8 +15,11 @@
   <% end %>
  
   <p>
+    <%= f.label :main_img %><br>
     <%= f.file_field :main_blog_img %><br>
-    <%= image_tag @article.main_blog_img.url(:medium) %>
+    <% if @article.main_blog_img.exists? %>
+      <%= image_tag @article.main_blog_img.url(:medium) %>
+    <% end %>
     
   </p>
  
