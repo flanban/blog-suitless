@@ -74,12 +74,12 @@ section[role="admin-box"] {
       margin-left:-5px;
       border-bottom:1px solid #a0afb9;
       &:first-child {
-        width: 18%;
+        width: 24%;
         margin-left: 0;
         margin-right: 2%;
       }
       &:nth-child(2) {
-        width:54%;
+        width:48%;
         margin-right: 2%;
       }
       &:nth-child(3) {
@@ -128,13 +128,13 @@ section[role="admin-box"] {
     vertical-align:top;
     margin-left:-5px;
     &:first-child {
-      width: 18%;
+      width: 24%;
       margin-right: 2%;
       margin-left:0;
       font-size:18px;
     }
     &:nth-child(2) {
-      width: 54%;
+      width: 48%;
       margin-right: 2%;    }
     &:nth-child(3) {
       width:24%;
