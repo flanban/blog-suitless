@@ -1,9 +1,8 @@
-* {box-sizing:border-box;}
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -47,4 +46,43 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'proxima-nova-sb';
+    src: asset-url('ProximaNova-Semibold.otf');
+      // src: url('../fonts/evelethicons-webfont.eot?#iefix') format('embedded-opentype'),
+      //  url('../fonts/evelethicons-webfont.woff') format('woff'),
+      // url('../fonts/evelethicons-webfont.ttf') format('truetype'),
+      // url('../fonts/evelethicons-webfont.svg#evelethicons') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima-nova-sb-it';
+    src: asset-url('ProximaNova-SemiboldItalic.otf');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'proxima-nova-lt';
+    src: asset-url('ProximaNova-Light.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima-nova-lt-it';
+    src: asset-url('ProximaNova-LightItalic.otf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+* {box-sizing:border-box;}
+
+body {
+  line-height:1.4;
+  width:70%;
+  margin:auto;
+  position:relative;
+  font-family: 'proxima-nova-lt';
 }

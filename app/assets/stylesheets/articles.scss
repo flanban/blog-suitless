@@ -2,16 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body.article-show {
+  width:620px;
+  h1 {
+    font-size:40px;
+  }
+  .article-body {
+  }
+}
+
 body.articles-home {
-  line-height:1.4;
-  width:70%;
-  margin:auto;
-  position:relative;
   background-color:#113751;
   color:white;
   img {
     position: absolute;
-    top: 26px;
+    top: 33px;
     left: 30px;
   }
   a {
@@ -25,7 +30,7 @@ body.articles-home {
       letter-spacing:2px;
       position:absolute;
       left:0;
-      bottom:20px;      
+      bottom:8px;      
     }
     > a {
       position:absolute;
