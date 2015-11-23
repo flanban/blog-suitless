@@ -1,8 +1,10 @@
 <% content_for :body_class, "article-show" %>
-
-<h1>
-  <%= @article.title %>
-</h1>
-<div class="article-body">
-  <%= @article.text.html_safe %>
+<div class="article-wrapper">
+  <%= image_tag 'peach.jpg' %>
+  <h1>
+    <%= @article.title %>
+  </h1>
+  <div class="article-body">
+    <%= @article.text.html_safe %>
+  </div>
 </div>

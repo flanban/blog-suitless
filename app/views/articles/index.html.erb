@@ -1,12 +1,11 @@
-<% content_for :body_class, "articles-home" %>
+<% content_for :body_class, "articles-admin" %>
 
-<header>
-  <%= image_tag 'white-suitless-logo.png' %> 
+<header role="admin-header">
   <h1>Articles</h1>
   <%= link_to 'New article', new_article_path %> 
 </header> 
 
-<section role="articles-list">
+<section role="admin-box">
   <ul class="column-labels">
     <li>title</li>
     <li>body text</li>

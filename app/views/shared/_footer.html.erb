@@ -1,0 +1,45 @@
+<footer class="">
+  <!--
+  <div id="contact" class="clearfix">
+    <h2 class="">Want to get in </br>touch?<span> Let's Talk.</span></h2>
+    <p>1-800-472-1522</p>
+  </div>
+ --> 
+  <span class="divider"></span>
+  
+  <div class="footer-info">
+    <a href="/" class="footer-logo"></a>
+    <h4 class="header-1">Suitless Inc.</h4>
+    <p>info@suitless.com</p>
+    <p>1-800-472-1522</p>
+  </div>
+  <span class="divider"></span>
+  <ul class="footer-links">
+    <li><a href="{{ site.baseurl }}/" {% if page.slug == 'home' %}class='current'{% endif %}>Home</a></li>
+    <li><a href='{{ site.baseurl }}/about' {% if current[1] == 'about' %}class='current'{% endif %}>About</a></li>     
+    <li><a href='{{ site.baseurl }}/ventures' {% if current[1] == 'ventures' %}class='current'{% endif %}>Ventures</a></li>      
+    <li><a href='#'></a></li>      
+  </ul>
+  
+  <span class="divider"></span>
+  
+  <div class="footer-maps">
+    <div>
+      <a href="/" class="seattle" target="_blank" href="https://www.google.com/maps/dir//117+E+Louisa+St,+Seattle,+WA+98102">
+        <p>open in google maps</p>
+      </a>
+      <p>117 E. Louisa St.</p>
+      <p><small>No.</small> 702</p>
+      <p><span class="semibold">Seattle, WA</span> 98102</p>
+    </div>
+    <div>
+      <a href="/" class="wash-dc" target="_blank" href="https://www.google.com/maps/dir//6323+Georgia+Ave+NW,+Washington,+DC+20011">
+        <p>open in google maps</p>
+      </a>
+      <p>6323 Georgia Ave.</p>
+      <p><small>No.</small> 55186</p>
+      <p><span class="semibold">Washington, DC</span> 20040</p>
+    </div>
+  </div>
+  
+</footer>

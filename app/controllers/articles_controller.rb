@@ -1,6 +1,8 @@
 class ArticlesController < ApplicationController
 
-  http_basic_authenticate_with name: "suitless", password: "nopants", except: [:index, :show]
+  http_basic_authenticate_with name: "suitless", password: "nopants", except: [:show]
+  
+  layout "admin", only: [:new, :edit, :index]
   
   def index
       @articles = Article.all
@@ -24,7 +26,7 @@ class ArticlesController < ApplicationController
     if @article.save
       redirect_to @article
     else
-      render 'new'
+      render 'new', :layout => 'admin'
     end
   end
 
@@ -34,7 +36,7 @@ class ArticlesController < ApplicationController
     if @article.update(article_params)
       redirect_to @article
     else
-      render 'edit'
+      render 'edit', :layout => 'admin'
     end
   end
   

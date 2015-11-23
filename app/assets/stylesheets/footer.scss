@@ -1,0 +1,187 @@
+@import "reset";
+
+body > footer {
+  padding-bottom:64px;
+  > * {
+    display:inline-block;
+    vertical-align:top;
+  }
+  @media(max-width: 660px) {
+    text-align:center;
+  }
+  #contact {
+    z-index:20;
+    margin:64px 0;
+    width: 100%;
+    font-size:26px;
+    @extend .semibold; // !optional; 
+
+    @media(min-width: 661px) {
+      text-align: right;
+      padding:0 64px;
+    }
+    @media(max-width: 660px) {
+      padding:0;
+    }
+    
+    h2 {
+      text-align:right;
+      display:inline-block;
+      padding-right: 18px;
+      margin-bottom: 12px;
+      span {
+        color:#00a6f3;
+      }
+      @media(max-width: 660px) {
+        text-align:inherit;
+        padding-right:0;      
+      }
+    }
+    p {
+      display:inline-block;
+      background:#00a6f3;
+      padding: 20px 50px;
+      color:#fff;
+      text-align:center;
+      vertical-align: top;
+      top: 0px;
+      @media(max-width: 880px) {
+        top:-6px;
+        padding: 20px 30px;
+      }
+    }
+  }
+
+
+  .footer-info {
+    width:26%;
+    padding:0 0 64px 84px;
+    border:none;
+    > a {
+      background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/sprite-global.png');
+      background-position:0 0;        
+      width:138px;
+      height:39px;
+      margin-left: -38px;
+      display:inline-block;
+    }
+    @media(max-width: 959px) {
+      width:49%;
+    }
+    @media(max-width: 660px) {
+      width:100%;
+      padding-left:0;
+    }
+  }
+  
+  .divider {
+    margin-bottom:64px;
+    &:nth-of-type(2) {
+      @media(min-width: 660px) {
+        display:none;
+      } 
+    }
+    &:nth-of-type(3) {
+      @media(min-width: 960px) {
+        display:none;
+      } 
+    }
+  }
+  
+  .footer-links {
+    margin-bottom:44px;
+    @extend .semibold;
+    @media(min-width: 960px) {
+      width:22%;
+    }
+    @media(max-width: 959px) {
+      width:50%;
+    }
+    @media(max-width: 660px) {
+      border:none;
+      width:80%;
+    }
+    li {
+      padding:8px 18px;
+      @media(max-width: 959px) {
+        width:36%;
+        display: inline-block;
+        text-align: center;     
+      }
+      @media(max-width: 660px) {
+        min-width: 154px;
+      }
+      @media(max-width: 420px) {
+//        width: 100%;
+      }
+      a {
+        padding:inherit;
+        color:rgb(85, 85, 85);
+        &.current  {
+          background:rgba(0,166,243,.6);
+          color:#fff;
+        }
+      }
+    }
+  }
+  .footer-maps {
+    font-size:13px;
+    //min width
+    @media(min-width: 960px) {
+      text-align:left;
+      padding-left: 18px;
+      width:50%;
+    }
+    //max width
+    @media(max-width: 959px) {
+      width:100%;
+      text-align: center;
+    }
+    > div {
+      display:inline-block;
+      vertical-align:top;
+      width:212px;
+      margin-bottom:24px;
+      &:first-child {
+        margin-right:14px; 
+      }
+      
+      a {
+        position:relative;
+        display:inline-block;
+        width:212px;
+        height:130px;
+        background-image:url('http://flanban.github.io/redolent-octo-kumquat/images/sprite-global.png');
+        &.seattle {
+          background-position:-550px 0;        
+        }
+        &.wash-dc {
+          background-position:-300px 0;        
+        }
+        p {
+          display:none;
+          @media(min-width:1024px) {
+            background:#6e6ed4;
+            color:#fff;
+            padding:3px 0;
+            text-align:center;            
+          }
+        }
+        &:hover {
+          p {
+            display:block;
+            position:absolute;
+            top:-24px;
+            width:100%;
+          }
+        }
+      }
+    }
+    small {
+      font-size:small;
+    }
+  }
+  > * {
+    border-left:1px solid rgba(0,0,0,.05);
+  }
+}
