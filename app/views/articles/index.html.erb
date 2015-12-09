@@ -18,7 +18,6 @@
         <% if article.main_blog_img.exists? %>
           <%= image_tag article.main_blog_img.url(:thumb) %>
         <% end %>
-        <%= image_tag article.main_blog_img.url(:big) %>
         
       </span>
       <span><%= article.title %></span>
